@@ -1,0 +1,16 @@
+<head>
+    <script src="https://npmcdn.com/vue/dist/vue.js"></script>
+  
+  </head>
+  <body>  
+    <div id="exercise">
+    <ul v-for="(task, indice) of testloop">
+      <button v-on:click="task.sh=!task.sh">{{task.name}}</button>
+      <li v-if="task.sh" v-for="(values, items) of task.data">
+        {{ values }}
+      </li></li>
+      
+    </ul>
+</div>
+  <script src="app.js"></script>
+  </body>
