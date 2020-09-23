@@ -1,0 +1,51 @@
+#effect {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+  }
+  
+  #progressbar {
+    width: 200px;
+    height: 20px;
+    border: 1px solid black;
+  }
+  
+  .block {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+  }
+  
+  .highlight {
+    background-color: red;
+    width: 200px !important;
+  }
+  
+  .shrink {
+    background-color: gray;
+    width: 50px !important;
+  }
+  
+  .class-1 {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+  }
+  
+  .class-2 {
+    background-color: green;
+  }
+  
+  .class-3 {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    background-color: red;
+  }
+  
+  .class-4 {
+    width: 500px;
+    height: 500px;
+    border: 2px solid black;
+  }
+  
