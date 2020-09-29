@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <b>Ejemplo de propiedades computadas</b>
+    <div id="comput" v-cloak>
+        <div><input type="text" v-model="mensaje"></div>
+        <div>Mensaje original.....<label v-text="mensaje"></label></div>
+        <div>Mensaje invertido.....<label v-text="reverse"></label></div>
+        <div>Mensaje mayusculas.....<label v-text="mayusculas"></label></div>
+        <div>Posición cifrado Cesar<input type="number" v-model="offsetCesar" number></div>
+        <div>Mensaje cifrado Cesar [offset Cesar: {{offsetCesar}}].....<label v-text="cifradoCesar"></label>{{encriptadoCesar}}</div>
+       
+    </div>
+    <li>
+       
+        <div id="filtros" v-cloak  v-show="false">
+         <b>Ejemplo de filtros</b>
+            <input type="text" v-model="buscarComunidad" placeholder="Nombre de comunidad">
+            <ul>
+                <li v-for="(c, index, k) in filtroComunidades" v-bind:key="index">
+                    ({{c}})..... Reverse .....{{c | Reverse }}<br> ({{c}})..... Mayusculas .....{{c | Mayusculas }}
+                </li>
+            </ul>
+        </div>
+    </li>
+    <script src="app.js"></script>
+    
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue-resource@1.5.0"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+
+   </body>
+</html>
